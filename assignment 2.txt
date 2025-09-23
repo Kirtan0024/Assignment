@@ -1,0 +1,109 @@
+									Module2: Introduction to Python
+
+Theoretical Assignments:
+
+1. Explain Python’s Role in Data Science?
+
+Python’s Role in Data Science
+
+Python has become one of the most widely used programming languages in Data Science due to its simplicity, versatility, and strong ecosystem of libraries and tools. 
+Here’s why Python plays a vital role in Data Science:
+
+1. Easy to Learn and Use
+
+Python has a simple syntax that is similar to English, making it easy for beginners to learn and write code.
+Data Scientists can focus more on solving problems rather than dealing with complex programming concepts.
+
+2. Extensive Libraries for Data Science
+
+Python provides powerful libraries specifically designed for Data Science tasks:
+
+NumPy → For numerical computing and handling large arrays.
+
+Pandas → For data manipulation, cleaning, and analysis using data frames.
+
+Matplotlib & Seaborn → For data visualization and plotting graphs.
+
+SciPy → For scientific and technical computations.
+
+Scikit-learn → For machine learning algorithms and predictive modeling.
+
+TensorFlow & PyTorch → For deep learning and AI applications.
+
+3. Data Handling and Cleaning
+
+Python can easily read data from multiple sources like CSV, Excel, SQL databases, or web APIs.
+
+Using Pandas, Data Scientists can clean, transform, and organize raw data for analysis efficiently.
+
+4. Data Visualization
+
+Python allows Data Scientists to create graphs, charts, and dashboards to understand trends and patterns.
+
+Visualizing data helps in making better decisions and communicating insights clearly.
+
+5. Machine Learning and AI
+
+Python supports machine learning and artificial intelligence through libraries like scikit-learn, TensorFlow, and PyTorch.
+
+It can be used to build predictive models, recommendation systems, classification models, and clustering algorithms.
+
+6. Flexibility and Scalability
+
+Python can be used for data analysis, web scraping, automation, and big data processing, all in one language.
+
+It’s flexible enough to handle both small and large datasets, making it ideal for projects of all sizes.
+
+
+
+2. Presentation: Object-Oriented Programming (OOP) Concepts in Python?
+
+Object-Oriented Programming (OOP) in Python is a way to structure and organize software using the concepts of objects and classes, without needing to focus on programming code.
+ This method models real-world entities and their relationships, making the system logical, efficient, and easy to manage for complex software projects.
+
+Main Concepts of OOP
+Objects
+Objects are “things” in a program that contain both data and actions. They can represent anything, such as a person, a car, or a bank account. Each object has its own
+ characteristics (like name, color, or balance) and behaviors (like walking, driving, or withdrawing money).
+
+Classes
+A class is a blueprint for creating objects. For example, a class “Car” describes the general features all cars have (four wheels, speed, color), and each specific car 
+(such as a BMW or Honda) is an object created based on that blueprint.
+
+Encapsulation
+Encapsulation means that all important information and actions are contained inside the object, and only select details are exposed to the outside world. This helps keep the
+data secure and ensures only authorized actions are allowed (like only allowing a bank account to be updated by certain methods).
+
+Abstraction
+Abstraction is the idea of hiding complex details and showing only what is necessary. For example, drivers use a car’s pedals and steering but don’t need to know the intricate 
+details of how the engine works. The car provides a simple interface for complicated processes.
+
+Inheritance
+Inheritance is when one class (known as the child or subclass) uses the features and behaviors of another class (known as the parent or superclass). For example, a “Vehicle”
+class might have general features, and “Car” or “Bike” classes inherit those general features but can also add their own specialized ones.
+
+Polymorphism
+Polymorphism allows different objects to respond to the same action in their own way. For example, both a bird and a plane can “fly,” but how they do it is different. 
+The action (“fly”) takes on multiple forms depending on the object.
+
+Why OOP Is Useful?
+Organizes programs around real-world entities, making them easy to understand.
+
+Encourages code reusability, saving time and effort.
+
+Makes software flexible and easier to update or maintain.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
