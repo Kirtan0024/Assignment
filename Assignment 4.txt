@@ -1,0 +1,271 @@
+1:- Write an essay: Importance of Data Cleaning in Data Science
+
+Introduction In the world of Data Science, we often hear the phrase, "Data is the new oil." However, just like crude oil cannot be used directly in our cars without refining, raw data cannot be used directly for analysis without cleaning. Data cleaning, also known as data cleansing or data scrubbing, is the process of fixing or removing incorrect, corrupted, incorrectly formatted, duplicate, or incomplete data within a dataset. While building fancy machine learning models sounds exciting, data cleaning is actually the most critical step in the entire data science pipeline.
+
+2. Presentation: Data Visualization Techniques & Best Practices
+
+Here is a structured presentation outline on "Data Visualization Techniques & Best Practices."
+
+I have designed this to look like a standard college project presentation—informative, structured, and including references to Python libraries (since you are a Data Science student), which will impress your teacher.
+
+Presentation Title: The Art of Data Visualization
+Subtitle: Techniques, Tools, and Best Practices for Data Science Presenter: [Your Name]
+
+Slide 1: Introduction
+Title: What is Data Visualization? Bullet Points:
+
+Definition: The graphical representation of information and data.
+
+Purpose: To turn complex datasets into clear visuals (charts, graphs, maps).
+
+Why it matters:
+
+Human brain processes visuals 60,000x faster than text.
+
+Helps identifying patterns, trends, and outliers easily.
+
+Slide 2: Basic Visualization Techniques
+Title: Fundamental Charts & When to Use Them Bullet Points:
+
+Bar Charts: Best for comparing categories (e.g., Sales by Month).
+
+Line Charts: Best for showing trends over time (e.g., Stock prices, Temperature).
+
+Pie Charts: Best for showing parts of a whole (Use sparingly!).
+
+Here is a structured presentation outline on "Data Visualization Techniques & Best Practices."
+
+I have designed this to look like a standard college project presentation—informative, structured, and including references to Python libraries (since you are a Data Science student), which will impress your teacher.
+
+Presentation Title: The Art of Data Visualization
+Subtitle: Techniques, Tools, and Best Practices for Data Science Presenter: [Your Name]
+
+Slide 1: Introduction
+Title: What is Data Visualization? Bullet Points:
+
+Definition: The graphical representation of information and data.
+
+Purpose: To turn complex datasets into clear visuals (charts, graphs, maps).
+
+Why it matters:
+
+Human brain processes visuals 60,000x faster than text.
+
+Helps identifying patterns, trends, and outliers easily.
+
+Speaker Note: "Good morning everyone. Today I will talk about Data Visualization. Simply put, it's about turning boring numbers into pictures that make sense. As data scientists, our job isn't just to analyze data, but to communicate it, and that's where visualization comes in."
+
+Slide 2: Basic Visualization Techniques
+Title: Fundamental Charts & When to Use Them Bullet Points:
+
+Bar Charts: Best for comparing categories (e.g., Sales by Month).
+
+Line Charts: Best for showing trends over time (e.g., Stock prices, Temperature).
+
+Pie Charts: Best for showing parts of a whole (Use sparingly!).
+
+Scatter Plots: Best for showing the relationship between two variables (e.g., Height vs. Weight).
+
+Speaker Note: "These are the bread-and-butter of visualization. If you want to compare things, use a Bar Chart. If you want to see growth over time, use a Line Chart. And a quick tip: try to avoid Pie charts if you have more than 3-4 categories; they get messy."
+
+Slide 3: Statistical Visualization (For Data Science)
+Title: Visualizing Distributions & Relationships Bullet Points:
+
+Histogram: Shows the distribution of a single variable (e.g., Age distribution of users).
+
+Box Plot: excellent for detecting outliers and understanding data spread.
+
+Here is a structured presentation outline on "Data Visualization Techniques & Best Practices."
+
+I have designed this to look like a standard college project presentation—informative, structured, and including references to Python libraries (since you are a Data Science student), which will impress your teacher.
+
+Presentation Title: The Art of Data Visualization
+Subtitle: Techniques, Tools, and Best Practices for Data Science Presenter: [Your Name]
+
+Slide 1: Introduction
+Title: What is Data Visualization? Bullet Points:
+
+Definition: The graphical representation of information and data.
+
+Purpose: To turn complex datasets into clear visuals (charts, graphs, maps).
+
+Why it matters:
+
+Human brain processes visuals 60,000x faster than text.
+
+Helps identifying patterns, trends, and outliers easily.
+
+Speaker Note: "Good morning everyone. Today I will talk about Data Visualization. Simply put, it's about turning boring numbers into pictures that make sense. As data scientists, our job isn't just to analyze data, but to communicate it, and that's where visualization comes in."
+
+Slide 2: Basic Visualization Techniques
+Title: Fundamental Charts & When to Use Them Bullet Points:
+
+Bar Charts: Best for comparing categories (e.g., Sales by Month).
+
+Line Charts: Best for showing trends over time (e.g., Stock prices, Temperature).
+
+Pie Charts: Best for showing parts of a whole (Use sparingly!).
+
+Scatter Plots: Best for showing the relationship between two variables (e.g., Height vs. Weight).
+
+Speaker Note: "These are the bread-and-butter of visualization. If you want to compare things, use a Bar Chart. If you want to see growth over time, use a Line Chart. And a quick tip: try to avoid Pie charts if you have more than 3-4 categories; they get messy."
+
+Slide 3: Statistical Visualization (For Data Science)
+Title: Visualizing Distributions & Relationships Bullet Points:
+
+Histogram: Shows the distribution of a single variable (e.g., Age distribution of users).
+
+Box Plot: excellent for detecting outliers and understanding data spread.
+
+Heatmap: Uses color intensity to show relationships (great for correlation matrices).
+
+Speaker Note: "Since we are studying Data Science, simple charts aren't always enough. We use Histograms to see how data is distributed. Box Plots are my personal favorite because they immediately show us the 'outliers'—the extreme values that might mess up our models."
+
+Slide 4: The Golden Rules (Best Practices)
+Title: Do’s and Don’ts of Visualization Bullet Points:
+
+K.I.S.S. (Keep It Simple, Stupid): Remove unnecessary gridlines, borders, and complex backgrounds.
+
+Label Everything: Always include Title, X-axis label, Y-axis label, and Legends.
+
+Color Theory:
+
+Use color to highlight data, not just for decoration.
+
+Be mindful of color-blind friendly palettes.
+
+Consistency: Don't switch styles halfway through a dashboard.
+
+Speaker Note: "This is the most important slide. A bad visualization is worse than no visualization. We must keep it simple—remove 'chart junk' like 3D effects or crazy backgrounds. And always, always label your axes. If the user has to guess what the chart is saying, the chart has failed."
+
+Slide 5: Tools of the Trade
+Title: Tools We Use Bullet Points:
+
+Python Libraries (Coding):
+
+Matplotlib: The foundation of plotting in Python.
+
+BI Tools (Drag & Drop):
+
+Tableau / PowerBI (For business dashboards).
+
+
+Practical Task
+
+
+1. The dataset contains more than 10,000 rows and more than 10 columns whichcontains features of the car and its (MSRP) manufacturer's suggested retail price. Clean the data and analyse it making it ready for modelling.
+
+import pandas as pd
+
+df = pd.read_csv("data.csv")
+df.head()
+
+	Make	Model	Year	Engine Fuel Type	Engine HP	Engine Cylinders	Transmission Type	Driven_Wheels	Number of Doors	Market Category	Vehicle Size	Vehicle Style	highway MPG	city mpg	Popularity	MSRP
+0	BMW	1 Series M	2011	premium unleaded (required)	335.0	6.0	MANUAL	rear wheel drive	2.0	Factory Tuner,Luxury,High-Performance	Compact	Coupe	26	19	3916	46135
+1	BMW	1 Series	2011	premium unleaded (required)	300.0	6.0	MANUAL	rear wheel drive	2.0	Luxury,Performance	Compact	Convertible	28	19	3916	40650
+2	BMW	1 Series	2011	premium unleaded (required)	300.0	6.0	MANUAL	rear wheel drive	2.0	Luxury,High-Performance	Compact	Coupe	28	20	3916	36350
+3	BMW	1 Series	2011	premium unleaded (required)	230.0	6.0	MANUAL	rear wheel drive	2.0	Luxury,Performance	Compact	Coupe	28	18	3916	29450
+4	BMW	1 Series	2011	premium unleaded (required)	230.0	6.0	MANUAL	rear wheel drive	2.0	Luxury	Compact	Convertible	28	18	3916	34500
+
+
+print(df.shape)
+
+(11914, 16)
+
+df.tail()
+
+	Make	Model	Year	Engine Fuel Type	Engine HP	Engine Cylinders	Transmission Type	Driven_Wheels	Number of Doors	Market Category	Vehicle Size	Vehicle Style	highway MPG	city mpg	Popularity	MSRP
+11909	Acura	ZDX	2012	premium unleaded (required)	300.0	6.0	AUTOMATIC	all wheel drive	4.0	Crossover,Hatchback,Luxury	Midsize	4dr Hatchback	23	16	204	46120
+11910	Acura	ZDX	2012	premium unleaded (required)	300.0	6.0	AUTOMATIC	all wheel drive	4.0	Crossover,Hatchback,Luxury	Midsize	4dr Hatchback	23	16	204	56670
+11911	Acura	ZDX	2012	premium unleaded (required)	300.0	6.0	AUTOMATIC	all wheel drive	4.0	Crossover,Hatchback,Luxury	Midsize	4dr Hatchback	23	16	204	50620
+11912	Acura	ZDX	2013	premium unleaded (recommended)	300.0	6.0	AUTOMATIC	all wheel drive	4.0	Crossover,Hatchback,Luxury	Midsize	4dr Hatchback	23	16	204	50920
+11913	Lincoln	Zephyr	2006	regular unleaded	221.0	6.0	AUTOMATIC	front wheel drive	4.0	Luxury	Midsize	Sedan	26	17	61	28995
+
+
+df.info()
+
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 11914 entries, 0 to 11913
+Data columns (total 16 columns):
+ #   Column             Non-Null Count  Dtype  
+---  ------             --------------  -----  
+ 0   Make               11914 non-null  object 
+ 1   Model              11914 non-null  object 
+ 2   Year               11914 non-null  int64  
+ 3   Engine Fuel Type   11911 non-null  object 
+ 4   Engine HP          11845 non-null  float64
+ 5   Engine Cylinders   11884 non-null  float64
+ 6   Transmission Type  11914 non-null  object 
+ 7   Driven_Wheels      11914 non-null  object 
+ 8   Number of Doors    11908 non-null  float64
+ 9   Market Category    8172 non-null   object 
+ 10  Vehicle Size       11914 non-null  object 
+ 11  Vehicle Style      11914 non-null  object 
+ 12  highway MPG        11914 non-null  int64  
+ 13  city mpg           11914 non-null  int64  
+ 14  Popularity         11914 non-null  int64  
+ 15  MSRP               11914 non-null  int64  
+dtypes: float64(3), int64(5), object(8)
+memory usage: 1.5+ MB
+
+df.describe()
+
+	Year	Engine HP	Engine Cylinders	Number of Doors	highway MPG	city mpg	Popularity	MSRP
+count	11914.000000	11845.00000	11884.000000	11908.000000	11914.000000	11914.000000	11914.000000	1.191400e+04
+mean	2010.384338	249.38607	5.628829	3.436093	26.637485	19.733255	1554.911197	4.059474e+04
+std	7.579740	109.19187	1.780559	0.881315	8.863001	8.987798	1441.855347	6.010910e+04
+min	1990.000000	55.00000	0.000000	2.000000	12.000000	7.000000	2.000000	2.000000e+03
+25%	2007.000000	170.00000	4.000000	2.000000	22.000000	16.000000	549.000000	2.100000e+04
+50%	2015.000000	227.00000	6.000000	4.000000	26.000000	18.000000	1385.000000	2.999500e+04
+75%	2016.000000	300.00000	6.000000	4.000000	30.000000	22.000000	2009.000000	4.223125e+04
+max	2017.000000	1001.00000	16.000000	4.000000	354.000000	137.000000	5657.000000	2.065902e+06
+
+
+df.info()
+df.isnull().sum()
+
+<class 'pandas.core.frame.DataFrame'>
+Index: 11199 entries, 0 to 11913
+Data columns (total 16 columns):
+ #   Column             Non-Null Count  Dtype  
+---  ------             --------------  -----  
+ 0   Make               11199 non-null  object 
+ 1   Model              11199 non-null  object 
+ 2   Year               11199 non-null  int64  
+ 3   Engine Fuel Type   11196 non-null  object 
+ 4   Engine HP          11199 non-null  float64
+ 5   Engine Cylinders   11199 non-null  float64
+ 6   Transmission Type  11199 non-null  object 
+ 7   Driven_Wheels      11199 non-null  object 
+ 8   Number of Doors    11199 non-null  float64
+ 9   Market Category    7823 non-null   object 
+ 10  Vehicle Size       11199 non-null  object 
+ 11  Vehicle Style      11199 non-null  object 
+ 12  highway MPG        11199 non-null  int64  
+ 13  city mpg           11199 non-null  int64  
+ 14  Popularity         11199 non-null  int64  
+ 15  MSRP               11199 non-null  int64  
+dtypes: float64(3), int64(5), object(8)
+memory usage: 1.5+ MB
+Make                    0
+Model                   0
+Year                    0
+Engine Fuel Type        3
+Engine HP               0
+Engine Cylinders        0
+Transmission Type       0
+Driven_Wheels           0
+Number of Doors         0
+Market Category      3376
+Vehicle Size            0
+Vehicle Style           0
+highway MPG             0
+city mpg                0
+Popularity              0
+MSRP                    0
+dtype: int64
+
+df = df.drop_duplicates()
+print("After removing duplicates:", df.shape)
+
+After removing duplicates: (11199, 16)
