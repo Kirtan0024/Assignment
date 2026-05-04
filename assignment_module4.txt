@@ -1,0 +1,269 @@
+1. Business Problem: A car rental company wants to analyze the rental durations of itscustomers to understand the typical rental period and optimize its pricing andfleet
+management strategies. Data: Let's consider the rental durations (in days) for asample of 50 customers:
+
+3, 2, 5, 4, 7, 2, 3, 3, 1, 6, 4, 2, 3, 5, 2, 4, 2, 1, 3, 5, 6, 3, 2, 1, 4, 2, 4, 5, 3, 2, 7, 2, 3, 4, 5, 1, 6, 2, 4, 3, 5, 3, 2, 4, 2, 6, 3, 2, 4, 5
+
+Question:
+
+a. Mean: What is the average rental duration for customers at the car rental
+company?
+
+b. Median: What is the typical or central rental duration experiencedbycustomers?
+
+c. Mode: Are there any recurring or most frequently occurring rental
+durations for customers?
+By answering these questions using the mean, median, and mode, thecar
+rental company can gain insights into the average rental duration, understand the most common rental periods, and make informed decisionsregarding pricing, fleet size, and availability. Additionally, this analysiscan help the company optimize resource allocation, plan for peak demandperiods, and enhance customer satisfaction by aligning service offeringswith customers' typical rental needs.
+
+
+data = [3, 2, 5, 4, 7, 2, 3, 3, 1, 6, 4, 2, 3, 5, 2, 4, 2, 1, 3, 5, 6, 3, 2, 1, 4, 2, 4, 5, 3, 2, 7, 2, 3,
+4, 5, 1, 6, 2, 4, 3, 5, 3, 2, 4, 2, 6, 3, 2, 4, 5]
+
+mean = sum(data) / len(data)
+print(f"Mean of data is : {mean}")
+sorted_data = sorted(data)
+
+print(f"Sorted data is : {sorted_data}")
+
+Output :-
+Mean of data is : 3.44
+Sorted data is : [1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 5, 5, 6, 6, 6, 6, 7, 7]
+
+
+
+data = [3, 2, 5, 4, 7, 2, 3, 3, 1, 6
+        , 4, 2, 3, 5, 2, 4, 2, 1, 3, 5, 6, 3, 2, 1, 4, 2, 4, 5, 3, 2, 7, 2, 3,
+4, 5, 1, 6, 2, 4, 3, 5, 3, 2, 4, 2, 6, 3, 2, 4, 5]
+
+mean = sum(data) / len(data)
+print(f"Mean of data is : {mean}")
+sorted_data = sorted(data)
+
+print(f"Sorted data is : {sorted_data}")
+
+n = len(sorted_data)
+
+if n%2 == 0:
+    median = (sorted_data[n//2 - 1] + sorted_data[n//2]) / 2
+    print(f"Median is : {median}")
+else :
+    median = sorted_data[n//2]
+    print(f"Median is : {median}")
+
+frequency = {}
+for x in data :
+    frequency[x] = frequency.get(x , 0) + 1
+mode = [k for k, v in frequency.items() if v == max(frequency.values())]
+print(f"Mode is : {mode}")
+
+Output :- 
+ean of data is : 3.44
+Sorted data is : [1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 5, 5, 6, 6, 6, 6, 7, 7]
+Median is : 3.0
+Mode is : [2]
+
+
+import statistics
+
+class RentalAnalyzer :
+    def __init__(self , durations):
+        self.durations = durations
+
+    def getMean(self):
+        return statistics.mean(self.durations)
+
+    def getMedian(self):
+        return statistics.median(self.durations)
+
+    def getMode(self):
+        return statistics.mode(self.durations)
+
+    def displayReport(self):
+        print(f"Average Mean is : {self.getMean() :.2f} days")
+        print(f"Median is : {self.getMedian()} days")
+        print(f"Mode is : {self.getMode()} days")
+
+rental_data = [3, 2, 5, 4, 7, 2, 3, 3, 1, 6, 4, 2, 3, 5, 2, 4, 2, 1, 3, 5, 6, 3, 2, 1, 4, 2, 4, 5, 3, 2, 7, 2, 3,
+4, 5, 1, 6, 2, 4, 3, 5, 3, 2, 4, 2, 6, 3, 2, 4, 5]
+
+analyzer = RentalAnalyzer(rental_data)
+analyzer.displayReport()
+
+output : -
+
+Average Mean is : 3.44 days
+Median is : 3.0 days
+Mode is : 2 days
+
+
+
+2. An e-commerce platform wants to analyze the delivery times of its shipments tounderstand the variability in order fulfillment and optimize its logistics operations. Data:
+Let's consider the delivery times (in days) for a sample of 50 shipments:
+
+3, 5, 2, 4, 6, 2, 3, 4, 2, 5, 7, 2, 3, 4, 2, 4, 2, 3, 5, 6, 3, 2, 1, 4, 2, 4, 5, 3, 2, 7, 2, 3, 4, 5, 1, 6, 2, 4, 3, 5, 3, 2, 4, 2, 6, 3, 2, 4, 5, 3
+
+Questions:
+
+a. Range: What is the range of the delivery times?
+b. Variance: What is the variance of the delivery times?
+c. Standard Deviation: What is the standard deviation of the deliverytimes?
+
+By answering these questions using different measures of dispersion, the e- commerce platform can gain insights into the variability in delivery times, identify any bottlenecks in the logistics process, and make informed decisionsregarding shipment tracking,customer expectations, and service level
+
+
+data = [3, 5, 2, 4, 6, 2, 3, 4, 2, 5, 7, 2, 3, 4, 2, 4, 2, 3, 5, 6, 3, 2, 1, 4, 2, 4, 5, 3, 2, 7, 2, 3, 4, 5, 1, 6, 2, 4, 3, 5, 3, 2, 4, 2, 6,3, 2, 4, 5, 3]
+
+#a. Range
+
+delivery_range = max(data) -  min(data)
+
+# b. Variance
+
+mean = sum(data) / len(data)
+
+#Using n-1 for sample variance
+
+variance = sum((x -mean)** 2 for x in data) / (len(data)-1)
+
+# c. Standard Deviation
+
+std_dev = variance ** 0.5
+
+print(f"Range: {delivery_range} days")
+
+print(f"Variance: {variance:.4f}")
+
+print(f"Standard Deviation: {std_dev:.4f} days")
+
+Outputs :-
+
+Range: 6 days
+Variance: 2.3363
+Standard Deviation: 1.5285 days
+
+
+import statistics
+
+class ShipmentAnalyzer:
+    """ A professional tool for analyzing logistics delivery performance. """
+
+    def __init__(self, delivery_times):
+        self.data = delivery_times
+
+    def calculate_range(self):
+        return max(self.data) - min(self.data)
+
+    def calculate_variance(self): 
+         #statistics.variance uses n-1 (Sample Variance) 
+        return statistics.variance(self.data)
+
+    def calculate_std_dev(self):
+        return statistics.variance(self.data)
+
+    def display_report(self):
+        print("=== Logistics Performance Report ===")
+        print(f"Sample Size: {len(self.data)} shipments")
+        print(f"Delivery Range: {self.calculate_range()} days")
+        print(f"Variance : {self.calculate_variance():.3f}")
+        print(f"Std Deviation {self.calculate_std_dev():.3f} days")
+        print("=" * 36)
+
+# data initialization
+shipement_data = [3, 5, 2, 4, 6, 2, 3, 4, 2, 5, 7, 2, 3, 4, 2, 4, 2, 3, 5, 6, 3, 2, 1, 4, 2, 4, 5, 3, 2, 7, 2, 3, 4, 5, 1, 6, 2, 4, 3, 5, 3, 2, 4, 2, 6, 3, 2, 4, 5, 3]
+
+# analysis execution
+analyzer = ShipmentAnalyzer(shipement_data)
+analyzer.display_report()
+
+Outputs :-
+
+=== Logistics Performance Report ===
+Sample Size: 50 shipments
+Delivery Range: 6 days
+Variance : 2.336
+Std Deviation 2.336 days
+
+
+3. A company wants to analyze the monthly revenue generated by one of its productsto understand its performance and variability. Data: Let's consider the monthly revenue (in thousands of dollars) for the past 12months:
+
+$120, $150, $110, $135, $125, $140, $130, $155, $115, $145, $135, $130
+
+Questions:
+
+a. Measure of Central Tendency: What is the average monthly revenuefor
+the product?
+b. Measure of Dispersion: What is the range of monthly revenue for theproduct?
+
+By answering these questions, the company can gain insights into the averagerevenue generated by the product and understand the range or variabilityinitsmonthly revenue, which can help with financial planning, forecasting, andevaluating the product's performance.
+
+
+revenue = [120 , 150 , 110 , 135 , 125 , 140, 130 , 155, 115 , 145 , 135 , 130]
+
+# a. meansure of contral tendecy (mean)
+mean_revenue = sum(revenue) / len(revenue)
+
+# b. meansure of dispresion (range)
+max_rev = max(revenue)
+min_rev = min(revenue)
+revenue_range = max_rev - min_rev
+
+print(f"Avarage monthly revenue :${mean_revenue}k")
+print(f"Revenue range :${revenue_range}k")
+
+Outputs :-
+
+Avarage monthly revenue :$132.5k
+Revenue range :$45k
+
+
+import statistics
+
+class ProductPerformance:
+    """Analyzer financial performance matrices for a specific product."""
+
+    def _init_(self, name, revenue_data):
+        self.name = name
+        self.revenue = revenue_data
+
+    def get_averages(self):
+        """Calculated the arithmetic mean."""
+        return statistics.mean(self.revenue)
+
+    def get_range(self):
+        """Calculated the dispersion (Range)."""
+        return max(self.revenue) - min(self.revenue)
+
+    def summary(self):
+        """Generates a formatted performance report."""
+        avg = self.get_averages()
+        span = self.get_range()
+
+        print(f"--- {self.name} Analysis ---")
+        print(f"Mean Revenue : ${avg:.2f}k")
+        print(f"Total Range : ${span}k")
+
+monthly_data = [120,150,110,135,125,140,130,155,115,145,135,130]
+analyzer = ProductPerformance("Product Alpha", monthly_data)
+analyzer.summary()
+
+OutPut :-
+
+--- Product Alpha Analysis ---
+Mean Revenue : $132.50k
+Total Range : $45k
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
